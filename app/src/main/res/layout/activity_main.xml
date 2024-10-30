@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Currency"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:padding="10dp"
+        android:gravity="center_vertical|start"/>
+
+    <!-- EditText for source currency -->
+    <EditText
+        android:id="@+id/sourceAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Spinner for source currency type -->
+    <Spinner
+        android:id="@+id/sourceCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/currency_array"
+        android:prompt="@string/prompt_source_currency" />
+
+    <!-- EditText for target currency (read-only) -->
+    <EditText
+        android:id="@+id/targetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Converted amount"
+        android:enabled="false" />
+
+    <!-- Spinner for target currency type -->
+    <Spinner
+        android:id="@+id/targetCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/currency_array"
+        android:prompt="@string/prompt_target_currency" />
+</LinearLayout>

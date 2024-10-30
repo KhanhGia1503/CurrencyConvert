@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Currency Change</string>
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>VND</item>
+        <item>JPY</item>
+        <item>GBP</item>
+    </string-array>
+    <string name="prompt_source_currency">Select Source Currency</string>
+    <string name="prompt_target_currency">Select Target Currency</string>
+</resources>
